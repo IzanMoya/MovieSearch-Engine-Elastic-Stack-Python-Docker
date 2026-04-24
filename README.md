@@ -59,6 +59,8 @@ El entorno se gestiona completamente mediante Docker para garantizar que sea rep
    ```bash
    docker-compose up -d
 4. Instala las dependencias de Python (se recomienda un entorno virtual):
+   ```bash
    pip install -r requirements.txt
 6. Ejecuta el script de ingesta (asegúrate de tener el archivo CSV en la ruta correcta):
+   ```bash
    python scripts/indexer.py
