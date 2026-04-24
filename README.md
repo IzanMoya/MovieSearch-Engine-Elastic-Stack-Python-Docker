@@ -26,3 +26,27 @@ El sistema sigue un flujo de datos moderno:
 Asegúrate de tener Docker instalado y ejecuta:
 ```bash
 docker-compose up -d
+---
+
+### 2. Las 3 Capturas que debes poner (Guía visual)
+
+Para que el README se vea profesional, no pongas capturas de toda tu pantalla. Usa la herramienta de recorte de Windows (`Win + Shift + S`) para capturar solo lo importante:
+
+1.  **Captura del Dashboard (La más importante):** Ve a tu Dashboard de Kibana, pulsa en "Full Screen" o simplemente recorta el área donde están tus gráficos. Es la "foto de portada" de tu proyecto.
+2.  **Captura de los Contenedores:** Abre **Docker Desktop**. Captura la fila donde se ven `elasticsearch` y `kibana` con el icono verde de "Running". Esto demuestra que sabes gestionar infraestructura.
+3.  **Captura de la Terminal (Opcional pero pro):** Una captura de tu terminal de VS Code después de ejecutar el script, donde se vea el mensaje: *"¡Todas las películas han sido indexadas correctamente!"*. Esto prueba que el código funciona.
+
+### 3. Bonus: El archivo `.gitignore`
+
+Crea un archivo llamado `.gitignore` (con el punto delante) en tu carpeta raíz para que GitHub no se llene de archivos basura. Pon esto dentro:
+
+```text
+# Entornos virtuales
+.venv/
+__pycache__/
+
+# Datos (No se suben archivos grandes a GitHub)
+data/*.csv
+
+# Configuración de VS Code
+.vscode/
